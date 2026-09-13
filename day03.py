@@ -54,4 +54,7 @@ def get_evens_2(nums):
     return a
 print(get_evens([0,1,1,1,2,3,4,5,5,5,6]))
 print(get_evens([]))
+#4
+
+
 
