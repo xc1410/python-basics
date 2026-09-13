@@ -16,6 +16,6 @@ def reverse_list(a):
     b=[]
     c=len(a)
     for i in range(c):
-        b=b.append(a[c-1-i])
+        b.append(a[c-1-i])
     return b 
     
