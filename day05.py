@@ -92,6 +92,7 @@ b = [2, 3, 4]
 # 1. 用两层循环求交集
 # 2. 用 set 求交集，对比行数
 print(thesame(a,b))
+print(thesame([10, 20, 30], [0, 1, 20]))   # 必须是 [20]
 
 def thesame_set(a, b):
     s1=set(a)
