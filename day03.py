@@ -29,3 +29,29 @@ def filter_students(students, line):
 info = [{"name":"a","scores":87}, {"name":"b","scores":62}, {"name":"c","scores":91}]
 print(filter_students(info, 85))   # ['a', 'c']
 print(filter_students(info, 60))   # ['a', 'b', 'c']
+
+#1
+def find_index(nums, target):
+    length=len(nums)
+    for n in range(length):
+        if nums[n] ==target:
+            return n
+    return -1
+print(find_index([0,1,1,1,2,3,4,5,5,5,6], 6))
+print(find_index([0,1,1,1,2,3,4,5,5,5,6], 19))
+#2
+def get_evens(nums):
+    a=[]
+    for n in nums:
+        if n%2==0:
+            a.append(n)
+    return a
+print(get_evens([0,1,1,1,2,3,4,5,5,5,6]))
+print(get_evens([]))
+#3
+def get_evens_2(nums):
+    a=[n for n in nums if n%2==0]
+    return a
+print(get_evens([0,1,1,1,2,3,4,5,5,5,6]))
+print(get_evens([]))
+
