@@ -48,8 +48,9 @@ def the_same(a,b):
 
 
 
-print(the_same([1,2,3],[2,3,4]))   # 期望 [2,3]
-print(the_same([10,20,30],[20,40]) )     # 期望 [20]
+print(the_same([1, 2, 3], [2, 3, 4]))    # 期望 [2, 3]
+print(the_same([10, 20, 30], [20, 40]))  # 期望 [20]   ← 抓下标/值混淆
+print(the_same([1, 1, 2], [1, 2]))       # 期望 [1, 2] ← 抓去重，新增
 # ---- 5. 反转 ----
 def contrast(nums):
     result=[]
